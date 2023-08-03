@@ -1,6 +1,6 @@
 package 자바의_정석.ch03;
 
-public class OperatorEx {
+public class OperatorEx11 {
     public static void main(String[] args) {
         char a = 'a';
         char d = 'd';
