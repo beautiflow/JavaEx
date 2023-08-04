@@ -10,7 +10,7 @@ public class FlowEx33 {
                    // break ;
                 }
                 //continue Loop1;
-//                continue ;t
+//                continue ;
                 System.out.println(i + "*" + j + " = " + i*j);
             }
         }
