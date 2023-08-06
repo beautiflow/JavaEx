@@ -7,7 +7,7 @@ public class PowerTest {
 
         long result = 0;
 
-        for(int i = 1 ; i <= 5; i++){
+        for(int i = 1 ; i <= n; i++){
             result += power(x, i);
         }
 
