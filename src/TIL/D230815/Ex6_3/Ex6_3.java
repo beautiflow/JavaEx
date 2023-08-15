@@ -1,4 +1,4 @@
-package TIL.D230815;
+package TIL.D230815.Ex6_3;
 
 public class Ex6_3 {
     public static void main(String[] args) {
