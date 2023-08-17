@@ -3,30 +3,40 @@ package 수업.D230816;
 import java.util.Scanner;
 
 public class Quiz2 {
-   // static int[][] bingo = new int[5][5];
+    //tstatic int[][] bingo = new int[5][5];
 
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
 
-        int[][] bingo = new int[5][5];
+        //    int[][] bingo = new int[5][5];
+        int[][] bingo = {
 
-        for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 5; j++) {
-                bingo[i][j] = sc.nextInt();
-            }
-        }
+                {1,1,1,1,1},
+
+                {1,1,1,1,1},
+
+                {1,1,1,1,1},
+
+                {1,1,1,1,1},
+
+                {1,1,1,1,1}
+        };
+
+
         int total = bingoCount(bingo);
         System.out.println(total);
     }
 
     public static int bingoCount(int[][] bingo) {
-       int total = 0;
+        int total = 0;
         int left = 0;
-        for (int i = 0; i < 5; i++) {
+        int right = 0;
+
+        for (int i = 0; i < bingo.length; i++) {
             int row = 0;
             int col = 0;
-            int right = 0;
-            for (int j = 0; j < 5; j++) {
+
+            for (int j = 0; j < bingo.length; j++) {
                 if (bingo[i][j] == 1) {
                     row++;
                     if (row == 5) {
@@ -39,11 +49,11 @@ public class Quiz2 {
                         total++;
                     }
                 }
-                if (bingo[i][4 - j] == 1) {
-                    right++;
-                    if (right == 5) {
-                        total++;
-                    }
+            }
+            if (bingo[i][4-i] == 1) {
+                right++;
+                if (right == 5) {
+                    total++;
                 }
             }
             if (bingo[i][i] == 1) {
