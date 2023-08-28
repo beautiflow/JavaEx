@@ -2,7 +2,7 @@ package 자바의_정석.ch11;
 
 import java.util.*;
 
-public class HashSetEx2 {
+public class HashSetLotto {
     public static void main(String[] args) {
         Set set = new HashSet();
 
