@@ -1,6 +1,5 @@
 package 자바의_정석.ch12;
 
-import java.security.AllPermission;
 import java.util.ArrayList;
 
 class Fruit{
