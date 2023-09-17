@@ -1,4 +1,4 @@
-package 자바의_정석.ch14;
+package 자바의_정석.ch14.LamdaEx1;
 
 public class LamdaEx1 {
     static void execute(MyFunction f){  // 매개변수의 타입이 Myfunction 인 메서드

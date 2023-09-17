@@ -115,7 +115,7 @@ public class StreamEx8 {
             for(Student s : ban.values()){
                 System.out.println(s);
             }
-        }
+            {}{}{}        }
 
         System.out.printf("%n6. 다중그룹화 + 통계(학년별, 반별 성적그룹)%n");
         Map<String, Set<Student.Level>> stuByScoreGroup = Stream.of(stuArr)
